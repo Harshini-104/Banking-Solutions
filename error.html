@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <section class="error-404">
+        <div class="error-container">
+
+            <div class="error-content">
+                <span class="error-tag">404 Error</span>
+
+                <h1>Page Not Found</h1>
+
+                <p>
+                    Oops! The page you're looking for doesn't exist or may have been moved.
+                    Let's get you back on track.
+                </p>
+
+                <a href="index.html" class="error-btn">
+                    Back to Home <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Optional Illustration -->
+            <div class="error-image">
+                <img src="./image/error.png" alt="404 Error">
+            </div>
+
+        </div>
+    </section>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .error-404 {
+            min-height: 100vh;
+            background-color: #062c2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+
+        .error-container {
+            width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .error-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #a6ff5f, #2aff9d);
+            color: #062c2c;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .error-content h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        .error-content p {
+            font-size: 17px;
+            color: #cbd5d5;
+            line-height: 28px;
+            max-width: 480px;
+            margin-bottom: 35px;
+        }
+
+        .error-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #a6ff5f, #2aff9d);
+            color: #062c2c;
+            padding: 14px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .error-btn i {
+            margin-left: 8px;
+            font-size: 13px;
+        }
+
+        .error-btn:hover {
+            opacity: 0.9;
+        }
+
+        .error-image img {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        @media (max-width: 1024px) {
+            .error-container {
+                width: 90%;
+                gap: 40px;
+            }
+
+            .error-content h1 {
+                font-size: 48px;
+            }
+
+            .error-image img {
+                max-width: 360px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .error-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .error-image {
+                order: -1;
+            }
+
+            .error-image img {
+                max-width: 320px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-tag {
+                font-size: 13px;
+                padding: 5px 12px;
+            }
+
+            .error-content h1 {
+                font-size: 36px;
+            }
+
+            .error-content p {
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .error-btn {
+                padding: 12px 22px;
+                font-size: 14px;
+            }
+
+            .error-image img {
+                max-width: 260px;
+            }
+        }
+    </style>
+</body>
+
+</html>
