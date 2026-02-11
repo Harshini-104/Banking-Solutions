@@ -98,7 +98,7 @@ nav {
 .hero {
   position: relative;
   height: 90vh;
-  background-image: url("./image/Banking.jpg");
+  background-image: url("./image/Banking.webp");
   background-size: cover;
   background-position: center;
   display: flex;
